@@ -1,0 +1,23 @@
+{
+  "name": "puhelinluettelo-backend",
+  "version": "0.0.1",
+  "description": "Puhelinluettelo-sovelluksen backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/laimikko1/Puhelinluettelo-backend.git"
+  },
+  "author": "Mikko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/laimikko1/Puhelinluettelo-backend/issues"
+  },
+  "homepage": "https://github.com/laimikko1/Puhelinluettelo-backend#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
