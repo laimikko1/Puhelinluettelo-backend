@@ -18,13 +18,14 @@ personSchema.statics.format = function (person) {
 
 const Person = mongoose.model('Person', personSchema)
 
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config()
+}
 
-
-const url = 'mongodb://mikkol:salasana1@ds223578.mlab.com:23578/puhelinluettelo'
+const url = process.env.MONGODB_URI
 
 
 mongoose.connect(url)
 mongoose.Promise = global.Promise
 
-Person.format
 module.exports = Person
